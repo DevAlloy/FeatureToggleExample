@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FD04C6BD1D3D7B4300009A9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04C6BC1D3D7B4300009A9C /* main.m */; };
 		FD04C6C01D3D7B4300009A9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04C6BF1D3D7B4300009A9C /* AppDelegate.m */; };
-		FD04C6C31D3D7B4300009A9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04C6C21D3D7B4300009A9C /* ViewController.m */; };
 		FD04C6C61D3D7B4300009A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD04C6C41D3D7B4300009A9C /* Main.storyboard */; };
 		FD04C6C81D3D7B4300009A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD04C6C71D3D7B4300009A9C /* Assets.xcassets */; };
 		FD04C6CB1D3D7B4300009A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD04C6C91D3D7B4300009A9C /* LaunchScreen.storyboard */; };
@@ -31,8 +30,6 @@
 		FD04C6BC1D3D7B4300009A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD04C6BE1D3D7B4300009A9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD04C6BF1D3D7B4300009A9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD04C6C11D3D7B4300009A9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD04C6C21D3D7B4300009A9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD04C6C51D3D7B4300009A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD04C6C71D3D7B4300009A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD04C6CA1D3D7B4300009A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,8 +80,6 @@
 			children = (
 				FD04C6BE1D3D7B4300009A9C /* AppDelegate.h */,
 				FD04C6BF1D3D7B4300009A9C /* AppDelegate.m */,
-				FD04C6C11D3D7B4300009A9C /* ViewController.h */,
-				FD04C6C21D3D7B4300009A9C /* ViewController.m */,
 				FD04C6C41D3D7B4300009A9C /* Main.storyboard */,
 				FD04C6C71D3D7B4300009A9C /* Assets.xcassets */,
 				FD04C6C91D3D7B4300009A9C /* LaunchScreen.storyboard */,
@@ -211,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD04C6C31D3D7B4300009A9C /* ViewController.m in Sources */,
 				FD04C6C01D3D7B4300009A9C /* AppDelegate.m in Sources */,
 				FD04C6BD1D3D7B4300009A9C /* main.m in Sources */,
 			);
@@ -404,6 +398,7 @@
 				FD04C6DC1D3D7B4300009A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD04C6DD1D3D7B4300009A9C /* Build configuration list for PBXNativeTarget "FeatureToggleExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +407,7 @@
 				FD04C6DF1D3D7B4300009A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
