@@ -7,8 +7,15 @@
 //
 
 #import "DependencyViewController.h"
+#import "ArticlesDataProvider.h"
+#import "AdDataProvider.h"
+#import "Article.h"
 
-@interface DependencyViewController ()
+static NSString * const kDependencyCellIdentifier = @"dependencyCell";
+
+@interface DependencyViewController () <UITableViewDataSource>
+
+@property (nonatomic, strong) NSArray *resultArticles;
 
 @end
 
@@ -16,22 +23,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSArray *articles = [self.articlesDataProvider provideData];
+    NSArray *ads = [self.adDataProvider provideData];
+    self.resultArticles = [self mixAds:ads withArticles:articles];
+
+    [self setupTableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupTableView {
+    [self.tableView reloadData];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSArray *)mixAds:(NSArray *)ads withArticles:(NSArray *)articles {
+    NSMutableArray *mixedArticles = [articles mutableCopy];
+    for (int i = 0; i < ads.count; ++i) {
+        [mixedArticles insertObject:ads[i] atIndex:i * 4 + i];
+    }
+
+    return [mixedArticles copy];
 }
-*/
+
+#pragma mark - Таблица
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.resultArticles.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDependencyCellIdentifier];
+    cell.textLabel.text = ((Article *)self.resultArticles[indexPath.row]).title;
+    return cell;
+}
 
 @end

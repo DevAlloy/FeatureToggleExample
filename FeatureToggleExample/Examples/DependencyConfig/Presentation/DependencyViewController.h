@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ArticlesDataProvider;
+@class AdDataProvider;
+
 @interface DependencyViewController : UITableViewController
+
+@property (nonatomic, strong) ArticlesDataProvider *articlesDataProvider;
+@property (nonatomic, strong) AdDataProvider *adDataProvider;
 
 @end
