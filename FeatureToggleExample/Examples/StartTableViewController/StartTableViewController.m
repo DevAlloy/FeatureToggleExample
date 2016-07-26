@@ -10,10 +10,19 @@
 #import "StaticConfigViewController.h"
 #import "ViewControllerConfig.h"
 
+static NSString * const kConfigSegueIdentifier = @"configSegue";
+static NSString * const kDependencySegueIdentifier = @"dependecySegue";
+
+@interface StartTableViewController ()
+
+@property (nonatomic) BOOL showAd;
+
+@end
+
 @implementation StartTableViewController
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"configSegue"]) {
+    if ([segue.identifier isEqualToString:kConfigSegueIdentifier]) {
         StaticConfigViewController *staticConfigViewController = segue.destinationViewController;
 
         // Для простоты будем подставлять значение articleWasPaid случайным образом
@@ -21,7 +30,19 @@
         viewControllerConfig.articleWasPaid = arc4random() % 2;
 
         staticConfigViewController.config = viewControllerConfig;
+    } else if ([segue.identifier isEqualToString:kDependencySegueIdentifier]) {
+        
     }
+}
+
+- (IBAction)withoutAdButtonWasPressed:(id)sender {
+    self.showAd = NO;
+    [self performSegueWithIdentifier:kDependencySegueIdentifier sender:self];
+}
+
+- (IBAction)withAdButtonWasPressed:(id)sender {
+    self.showAd = YES;
+    [self performSegueWithIdentifier:kDependencySegueIdentifier sender:self];
 }
 
 @end

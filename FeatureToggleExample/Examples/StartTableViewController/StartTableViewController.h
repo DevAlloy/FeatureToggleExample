@@ -10,4 +10,7 @@
 
 @interface StartTableViewController : UITableViewController
 
+- (IBAction)withoutAdButtonWasPressed:(id)sender;
+- (IBAction)withAdButtonWasPressed:(id)sender;
+
 @end

@@ -19,6 +19,7 @@
 		FD04C6D61D3D7B4300009A9C /* FeatureToggleExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04C6D51D3D7B4300009A9C /* FeatureToggleExampleTests.m */; };
 		FD464DCC1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD464DCB1D3ED9FF00CC9C6D /* StartTableViewController.m */; };
 		FD464DCD1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD464DCB1D3ED9FF00CC9C6D /* StartTableViewController.m */; };
+		FD9468F61D47F7CD0039BDD4 /* DependencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9468F51D47F7CD0039BDD4 /* DependencyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		FD04C6D71D3D7B4300009A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD464DCA1D3ED9FF00CC9C6D /* StartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTableViewController.h; sourceTree = "<group>"; };
 		FD464DCB1D3ED9FF00CC9C6D /* StartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTableViewController.m; sourceTree = "<group>"; };
+		FD9468F41D47F7CD0039BDD4 /* DependencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependencyViewController.h; sourceTree = "<group>"; };
+		FD9468F51D47F7CD0039BDD4 /* DependencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DependencyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +99,20 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		B125184440F4EC436F1D1312 /* DependencyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B1251F71F9390BC0A37487AC /* Presentation */,
+			);
+			path = DependencyConfig;
+			sourceTree = "<group>";
+		};
 		B125195A808648923398D3A8 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
 				B12510E89D13DF117E4EFAF5 /* StaticConfig */,
 				B1251FF483D5C4C0A4301887 /* StartTableViewController */,
+				B125184440F4EC436F1D1312 /* DependencyConfig */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -112,6 +124,15 @@
 				B1251BAC1AAB461EC4B854E0 /* ViewControllerConfig.h */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B1251F71F9390BC0A37487AC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FD9468F41D47F7CD0039BDD4 /* DependencyViewController.h */,
+				FD9468F51D47F7CD0039BDD4 /* DependencyViewController.m */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		B1251FF483D5C4C0A4301887 /* StartTableViewController */ = {
@@ -275,6 +296,7 @@
 				FD04C6BD1D3D7B4300009A9C /* main.m in Sources */,
 				B125130C9046D169EFC89D1C /* AppDelegate.m in Sources */,
 				FD464DCC1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */,
+				FD9468F61D47F7CD0039BDD4 /* DependencyViewController.m in Sources */,
 				B1251E55673DEE6DC8A9807F /* StaticConfigViewController.m in Sources */,
 				B1251E5D9DACBCF6D65B7787 /* ViewControllerConfig.m in Sources */,
 			);
