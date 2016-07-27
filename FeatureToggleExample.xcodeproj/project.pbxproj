@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		B12510EC53682A3117FFDEE5 /* ArticlesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B12511DF411906865247A506 /* ArticlesDataProvider.m */; };
 		B125130C9046D169EFC89D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B125103FDEECB2CE14621F85 /* AppDelegate.m */; };
+		B125135815EFD9AFE780631F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251B16155BE6C0AC0C467A /* Constants.m */; };
 		B12513D1624168965BAF3D43 /* ViewControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B12519C0D255DB19735D3951 /* ViewControllerConfig.m */; };
+		B125143FB56128888C2BCD41 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251B16155BE6C0AC0C467A /* Constants.m */; };
 		B1251522D0048745256E5884 /* AdDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251212F60E0856ED1165DA /* AdDataProvider.m */; };
 		B125152D2B86790C833EF2FE /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = B12514FB0BE4B7AA0E8CF6AC /* Article.m */; };
 		B12516A383D0A332F0BB09C3 /* StaticConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251E80B56192AC374D2468 /* StaticConfigViewController.m */; };
 		B1251744D520A0DABDF7C1B2 /* ArticlesDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B12511DF411906865247A506 /* ArticlesDataProvider.m */; };
+		B1251850F4A9C77ECF61491A /* FeatureServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251094B4490BB93FC85A10 /* FeatureServiceViewController.m */; };
+		B1251B45B7112409C6AEB8E6 /* FeatureServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251C69057C607C090775F6 /* FeatureServiceImplementation.m */; };
 		B1251D6533F5930BF8E29F7C /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = B12514FB0BE4B7AA0E8CF6AC /* Article.m */; };
+		B1251E527649FE3F104B560A /* FeatureServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251C69057C607C090775F6 /* FeatureServiceImplementation.m */; };
 		B1251E55673DEE6DC8A9807F /* StaticConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251E80B56192AC374D2468 /* StaticConfigViewController.m */; };
 		B1251E5D9DACBCF6D65B7787 /* ViewControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B12519C0D255DB19735D3951 /* ViewControllerConfig.m */; };
 		B1251EBE1262F25752404AC3 /* AdDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B1251212F60E0856ED1165DA /* AdDataProvider.m */; };
@@ -26,6 +31,8 @@
 		FD464DCC1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD464DCB1D3ED9FF00CC9C6D /* StartTableViewController.m */; };
 		FD464DCD1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD464DCB1D3ED9FF00CC9C6D /* StartTableViewController.m */; };
 		FD9468F61D47F7CD0039BDD4 /* DependencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9468F51D47F7CD0039BDD4 /* DependencyViewController.m */; };
+		FDE7A2AE1D494DDA000B333B /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE7A2AD1D494DDA000B333B /* AdViewController.m */; };
+		FDE7A2AF1D494DDA000B333B /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE7A2AD1D494DDA000B333B /* AdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +47,23 @@
 
 /* Begin PBXFileReference section */
 		B125103FDEECB2CE14621F85 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1251094B4490BB93FC85A10 /* FeatureServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureServiceViewController.m; sourceTree = "<group>"; };
 		B12511DF411906865247A506 /* ArticlesDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesDataProvider.m; sourceTree = "<group>"; };
 		B1251212F60E0856ED1165DA /* AdDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDataProvider.m; sourceTree = "<group>"; };
 		B12514FB0BE4B7AA0E8CF6AC /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		B1251608ECB732DC67EF76D5 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
 		B1251764972A7144F6153432 /* ArticlesDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesDataProvider.h; sourceTree = "<group>"; };
+		B12518467255622DAEDA6E71 /* FeatureServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureServiceViewController.h; sourceTree = "<group>"; };
+		B125198561B3D17A4C88DD1B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		B12519C0D255DB19735D3951 /* ViewControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerConfig.m; sourceTree = "<group>"; };
 		B1251A3F08A10778319CEA13 /* AdDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDataProvider.h; sourceTree = "<group>"; };
+		B1251B0D3BB7D333D18ABAA7 /* FeatureServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureServiceImplementation.h; sourceTree = "<group>"; };
+		B1251B16155BE6C0AC0C467A /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		B1251B5D80704F8F948A3D7B /* StaticConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticConfigViewController.h; sourceTree = "<group>"; };
 		B1251BAC1AAB461EC4B854E0 /* ViewControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerConfig.h; sourceTree = "<group>"; };
+		B1251C69057C607C090775F6 /* FeatureServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureServiceImplementation.m; sourceTree = "<group>"; };
 		B1251C9696DC1A525BDF30BF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1251D2EC912DA96F124D28D /* FeatureService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureService.h; sourceTree = "<group>"; };
 		B1251E17A5CBF911C21A583F /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		B1251E80B56192AC374D2468 /* StaticConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticConfigViewController.m; sourceTree = "<group>"; };
 		FD04C6B81D3D7B4300009A9C /* FeatureToggleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureToggleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +79,8 @@
 		FD464DCB1D3ED9FF00CC9C6D /* StartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTableViewController.m; sourceTree = "<group>"; };
 		FD9468F41D47F7CD0039BDD4 /* DependencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependencyViewController.h; sourceTree = "<group>"; };
 		FD9468F51D47F7CD0039BDD4 /* DependencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DependencyViewController.m; sourceTree = "<group>"; };
+		FDE7A2AC1D494DDA000B333B /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		FDE7A2AD1D494DDA000B333B /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B12510192AFE0E840107A7B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1251C69057C607C090775F6 /* FeatureServiceImplementation.m */,
+				B1251B0D3BB7D333D18ABAA7 /* FeatureServiceImplementation.h */,
+				B1251D2EC912DA96F124D28D /* FeatureService.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B12510E89D13DF117E4EFAF5 /* StaticConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +147,15 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		B1251706758A0ADB68536A3D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B1251B16155BE6C0AC0C467A /* Constants.m */,
+				B125198561B3D17A4C88DD1B /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B125184440F4EC436F1D1312 /* DependencyConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +172,7 @@
 				B12510E89D13DF117E4EFAF5 /* StaticConfig */,
 				B1251FF483D5C4C0A4301887 /* StartTableViewController */,
 				B125184440F4EC436F1D1312 /* DependencyConfig */,
+				B1251BEF7440BAA755C6BBFB /* FeatureService */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -153,6 +189,15 @@
 			path = DataProviders;
 			sourceTree = "<group>";
 		};
+		B1251BEF7440BAA755C6BBFB /* FeatureService */ = {
+			isa = PBXGroup;
+			children = (
+				B1251CF717B4FE7CB5103530 /* Presentation */,
+				B12510192AFE0E840107A7B9 /* Services */,
+			);
+			path = FeatureService;
+			sourceTree = "<group>";
+		};
 		B1251C7C8C3254AE988F9F92 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +205,17 @@
 				B1251BAC1AAB461EC4B854E0 /* ViewControllerConfig.h */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B1251CF717B4FE7CB5103530 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B12518467255622DAEDA6E71 /* FeatureServiceViewController.h */,
+				B1251094B4490BB93FC85A10 /* FeatureServiceViewController.m */,
+				FDE7A2AC1D494DDA000B333B /* AdViewController.h */,
+				FDE7A2AD1D494DDA000B333B /* AdViewController.m */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		B1251F71F9390BC0A37487AC /* Presentation */ = {
@@ -208,6 +264,7 @@
 				FD04C6BB1D3D7B4300009A9C /* Supporting Files */,
 				B12514148EDA16F27048D967 /* Application */,
 				B125195A808648923398D3A8 /* Examples */,
+				B1251706758A0ADB68536A3D /* Constants */,
 			);
 			path = FeatureToggleExample;
 			sourceTree = "<group>";
@@ -332,12 +389,16 @@
 				FD04C6BD1D3D7B4300009A9C /* main.m in Sources */,
 				B125130C9046D169EFC89D1C /* AppDelegate.m in Sources */,
 				FD464DCC1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */,
+				FDE7A2AE1D494DDA000B333B /* AdViewController.m in Sources */,
 				FD9468F61D47F7CD0039BDD4 /* DependencyViewController.m in Sources */,
 				B1251E55673DEE6DC8A9807F /* StaticConfigViewController.m in Sources */,
 				B1251E5D9DACBCF6D65B7787 /* ViewControllerConfig.m in Sources */,
 				B12510EC53682A3117FFDEE5 /* ArticlesDataProvider.m in Sources */,
 				B125152D2B86790C833EF2FE /* Article.m in Sources */,
 				B1251EBE1262F25752404AC3 /* AdDataProvider.m in Sources */,
+				B1251850F4A9C77ECF61491A /* FeatureServiceViewController.m in Sources */,
+				B1251B45B7112409C6AEB8E6 /* FeatureServiceImplementation.m in Sources */,
+				B125135815EFD9AFE780631F /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +409,13 @@
 				FD04C6D61D3D7B4300009A9C /* FeatureToggleExampleTests.m in Sources */,
 				B12516A383D0A332F0BB09C3 /* StaticConfigViewController.m in Sources */,
 				FD464DCD1D3ED9FF00CC9C6D /* StartTableViewController.m in Sources */,
+				FDE7A2AF1D494DDA000B333B /* AdViewController.m in Sources */,
 				B12513D1624168965BAF3D43 /* ViewControllerConfig.m in Sources */,
 				B1251744D520A0DABDF7C1B2 /* ArticlesDataProvider.m in Sources */,
 				B1251D6533F5930BF8E29F7C /* Article.m in Sources */,
 				B1251522D0048745256E5884 /* AdDataProvider.m in Sources */,
+				B1251E527649FE3F104B560A /* FeatureServiceImplementation.m in Sources */,
+				B125143FB56128888C2BCD41 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -98,6 +98,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WWo-G3-lfp" kind="show" id="6kI-zJ-pda"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KlL-wI-brN" style="IBUITableViewCellStyleDefault" id="QRO-7E-dJL">
                                         <rect key="frame" x="0.0" y="309" width="600" height="44"/>
@@ -231,6 +234,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNb-g0-ceN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1503" y="487"/>
+        </scene>
+        <!--Feature Service View Controller-->
+        <scene sceneID="RP2-SC-yS6">
+            <objects>
+                <viewController id="WWo-G3-lfp" customClass="FeatureServiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cGp-TO-WWh"/>
+                        <viewControllerLayoutGuide type="bottom" id="uj4-Xc-r3a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mmh-hG-gat">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tFG-iD-F7R">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Реклама еще раз появится при перезаходе на этот экран через 5 минут
+Еще можно переустановить приложение</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tFG-iD-F7R" secondAttribute="trailing" id="CfN-Xs-yoL"/>
+                            <constraint firstItem="tFG-iD-F7R" firstAttribute="leading" secondItem="mmh-hG-gat" secondAttribute="leading" id="ns6-ff-3JI"/>
+                            <constraint firstItem="tFG-iD-F7R" firstAttribute="top" secondItem="cGp-TO-WWh" secondAttribute="bottom" id="qjK-px-UZa"/>
+                            <constraint firstItem="uj4-Xc-r3a" firstAttribute="top" secondItem="tFG-iD-F7R" secondAttribute="bottom" id="s2c-gL-12E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Flh-tg-Bz8" kind="show" identifier="showAd" id="MxW-pe-YiB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2D0-3C-DB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="1235"/>
+        </scene>
+        <!--Ad View Controller-->
+        <scene sceneID="Bjh-ct-97h">
+            <objects>
+                <viewController id="Flh-tg-Bz8" customClass="AdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fgn-BL-9dO"/>
+                        <viewControllerLayoutGuide type="bottom" id="TzR-8g-8TI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="giC-SU-gj7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgN-dL-xLu">
+                                <rect key="frame" x="234.5" y="240" width="131.5" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313730000001" green="0.3921568627" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lgN-dL-xLu" firstAttribute="centerY" secondItem="giC-SU-gj7" secondAttribute="centerY" id="Hnf-uB-ik0"/>
+                            <constraint firstItem="lgN-dL-xLu" firstAttribute="centerX" secondItem="giC-SU-gj7" secondAttribute="centerX" id="rsZ-Vx-hs4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAD-HD-kBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212" y="1235"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xYK-fE-IzU">
